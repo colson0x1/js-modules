@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/colson0x1/js-modules/issues"
   },
-  "homepage": "https://github.com/colson0x1/js-modules#readme"
+  "homepage": "https://github.com/colson0x1/js-modules#readme",
+  "devDependencies": {
+    "webpack": "^2.2.0-rc.0"
+  }
 }
