@@ -13,8 +13,7 @@
  * */
 
 // CommonJS implementation
-const sum = require('./sum'):
+const sum = require('./sum');
 
 const total = sum(10, 9);
 console.log(total);
-
