@@ -63,14 +63,74 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: TypeError: this.getOptions is not a function\n    at Object.loader (/home/colson/reactprod/jsModules/node_modules/babel-loader/lib/index.js:44:28)\n    at Object.<anonymous> (/home/colson/reactprod/jsModules/node_modules/babel-loader/lib/index.js:39:12)");
+"use strict";
+
+
+var image = document.createElement('img');
+// image.src = 'https://lorempixel.com/400/400';
+image.src = 'https://picsum.photos/400/400';
+
+document.body.appendChild(image);
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var sum = function sum(a, b) {
+  return a + b;
+};
+
+// module.exports = sum;
+exports.default = sum;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _sum = __webpack_require__(1);
+
+var _sum2 = _interopRequireDefault(_sum);
+
+__webpack_require__(0);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Module System
+
+/* @ CommonJS
+ * require, module.exports
+ * */
+
+/* @ AMD (Asynchronous Module Definition)
+ * require, define
+ * */
+
+/* @ ES2015
+ * import, export
+ * */
+
+// CommonJS implementation
+// const sum = require('./sum');
+
+// ES2015 Module System
+var total = (0, _sum2.default)(10, 9);
+console.log(total);
 
 /***/ }
 /******/ ]);

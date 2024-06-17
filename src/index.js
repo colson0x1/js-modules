@@ -14,8 +14,10 @@
 
 // CommonJS implementation
 // const sum = require('./sum');
+
 // ES2015 Module System
 import sum from './sum';
+import './image_viewer';
 
 const total = sum(10, 9);
 console.log(total);
