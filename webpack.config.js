@@ -13,6 +13,11 @@ const config = {
         use: 'babel-loader',
         test: /\.js$/,
       },
+      {
+        // Loaders are applied from RIGHT to LEFT
+        use: ['style-loader', 'css-loader'],
+        test: /\.css$/,
+      },
     ],
   },
 };
