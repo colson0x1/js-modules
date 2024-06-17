@@ -26,6 +26,20 @@ const config = {
         }),
         test: /\.css$/,
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        // loaders order matters (precedence from right to left)
+        use: [
+          {
+            loader: 'url-loader',
+            // 40,000 bytes or 40kb
+            // if image > 40kb, save it as a separate file
+            // if image < 40kb, include it into the bundle.js output
+            options: { limit: 40000 },
+          },
+          'image-webpack-loader',
+        ],
+      },
     ],
   },
   plugins: [new ExtractTextPlugin('style.css')],
