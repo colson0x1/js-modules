@@ -1,6 +1,6 @@
 # jsModules Project (Webpack Integration)
 
-Sup! Welcome to the **jsModules** project. I'm thrilled to share this cutting-edge demonstration of modern JavaScript development with Webpack with you. This project showcases the powerful capabilities of Webpack, including module bundling, code splitting, and asset management, using a variety of loaders and plugins to optimize and streamline the build process.
+Sup!! Welcome to the **jsModules** project. I'm thrilled to share this cutting-edge demonstration of modern JavaScript development with Webpack with you. This project showcases the powerful capabilities of Webpack, including module bundling, code splitting, and asset management, using a variety of loaders and plugins to optimize and streamline the build process.
 
 ## Table of Contents
 
